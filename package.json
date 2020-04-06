@@ -1,16 +1,27 @@
 {
   "name": "cypress-example",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^4.3.0"
-  }
+  },
+  "dependencies": {
+    "prettier": "^2.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeG212/cypress-sample.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MikeG212/cypress-sample/issues"
+  },
+  "homepage": "https://github.com/MikeG212/cypress-sample#readme",
+  "description": ""
 }

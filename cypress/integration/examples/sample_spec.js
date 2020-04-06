@@ -49,3 +49,45 @@ describe('BeatIt drumming test', function() {
             .wait(500).type('l');
     })
 })
+
+describe('Sample test with cypress', () => {
+    it('True should be True', () => {
+        expect(true).to.equal(true);
+    })
+
+    it('5 should be 5', () => {
+        expect(5).to.equal(5)
+    })
+})
+
+describe('Another describe block', () => {
+    it('False should be false', () => {
+        expect(false).to.equal(false)
+    })
+})
+
+describe('Browser Actions', () => {
+    it('should load correct url', () => {
+        cy.visit('https://example.com', { timeout: 10000 })
+    })
+
+    it('should check correct url', () => {
+        cy.url().should('include', 'example')
+    })
+
+    it('should check h1 is visible', () => {
+        cy.get('h1').should('be.visible')
+    })
+
+    it('should wait for 3 seconds', () => {
+        cy.wait(3000)
+    })
+
+    it('should pause the execution', () => {
+        cy.pause()
+    })
+
+    it('should check h1 is visible', () => {
+        cy.get('h1').should('be.visible')
+    })
+})
