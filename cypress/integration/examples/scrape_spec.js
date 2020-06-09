@@ -20,6 +20,8 @@ describe('Webscraper Actions', () => {
     it('should load books website', () => {
         cy.visit('http://books.toscrape.com/index.html')
         cy.url().should('include', 'index.html')
+        cy.log('Hello World')
+        cy.log('Website loaded')
     })
 
     it('should go to to the poetry section', () => {
@@ -36,7 +38,3 @@ describe('Webscraper Actions', () => {
         cy.get('.price_color').contains('£23.88');
     })
 })
-
-//click on poetry
-//click on olio
-//it's price should be

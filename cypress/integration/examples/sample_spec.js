@@ -39,16 +39,16 @@ describe('Github navigation test', function() {
     })
 })
 
-describe('BeatIt drumming test', function() {
-    it('visits beat it and plays the drums', function() {
-        cy.visit('https://mikeg212.github.io/BeatIt/');
-        cy.get('body').type('a')
-            .wait(500).type('h')
-            .wait(500).type('d')
-            .wait(500).type('s')
-            .wait(500).type('l');
-    })
-})
+// describe('BeatIt drumming test', function() {
+//     it('visits beat it and plays the drums', function() {
+//         cy.visit('https://mikeg212.github.io/BeatIt/');
+//         cy.get('body').type('a')
+//             .wait(500).type('h')
+//             .wait(500).type('d')
+//             .wait(500).type('s')
+//             .wait(500).type('l');
+//     })
+// })
 
 describe('Sample test with cypress', () => {
     it('True should be True', () => {
